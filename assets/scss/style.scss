@@ -1,0 +1,37 @@
+
+//importo sorgente bootstrap
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import 'sidebar';
+@import 'main.scss';
+@import 'mixin';
+
+.nav{
+    position: relative;
+    z-index:50 ;
+}
+
+.box {
+@include square(400px);
+@include tablet{
+    @include square(400px)
+}
+@include large{
+    @include square(600px)
+}
+@include xlarge{
+    @include square(1200px)
+}
+ }
+
+
+.nav{
+    @include tablet{
+        @include size;
+    }
+}
+
+
+
+

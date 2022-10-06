@@ -1,0 +1,28 @@
+*{box-sizing: border-box;margin: 0;padding: 0;}
+
+$h1-test:black;
+$font-h1:56px;
+
+$p-test:black;
+$font-p:22px;
+main{
+    z-index: -1;
+    position: relative;
+    margin-left: 90px;
+    margin-right: 20px;
+    
+   
+
+}
+h1{
+    text-align: center;
+    color:$h1-test;
+    font-size: $font-h1;
+}
+.p-text{
+    font-size:$font-p;
+    color:$p-test;
+    text-align: center;
+
+}
+

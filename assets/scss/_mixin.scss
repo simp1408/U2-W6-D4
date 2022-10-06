@@ -1,0 +1,35 @@
+
+@mixin square($size){
+    width: $size;
+   
+}
+
+
+$tablet:500px;
+$large:992px;
+$xlarge:1200px;
+
+
+
+
+@mixin tablet {
+    @media screen and (max-width:$tablet) {
+        @content;   
+    }   
+}
+
+@mixin large {
+    @media screen and (min-width:$large) {
+        @content;   
+    }   
+}
+
+@mixin xlarge {
+    @media screen and (min-width:$xlarge) {
+        @content;   
+    }   
+}
+
+@mixin size{
+    display: none;
+}
